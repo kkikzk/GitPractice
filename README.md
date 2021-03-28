@@ -49,3 +49,12 @@ file1とfile2を示すブロブに変化はなく、2回目のコミット後も
 $ git checkout -b dev main  
 $ git push -u origin dev
 
+### タグの追加方法
+* コメント(注釈)付きの場合
+> $ git tag -a <tag名> -m "コメント"
+
+* コメント(注釈)なしの場合
+>$ git tag <tag名>
+
+* tagの共有
+>$ git push origin <tag名>
