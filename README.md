@@ -54,7 +54,14 @@ $ git push -u origin dev
 > $ git tag -a <tag名> -m "コメント"
 
 * コメント(注釈)なしの場合
->$ git tag <tag名>
+> $ git tag <tag名>
 
 * tagの共有
->$ git push origin <tag名>
+> $ git push origin <tag名>
+
+* 一覧の表示
+> $ git tag  
+$ git tag -l "v1.*"
+
+* 特定のtagを確認
+> $ git show <tag名>
