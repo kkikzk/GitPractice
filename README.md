@@ -40,3 +40,12 @@ $ git commit -m "2回目のコミット"
 ![](./res/2021-03-28-12.18.09.png)
 
 file1とfile2を示すブロブに変化はなく、2回目のコミット後も同じブロブを参照する。ツリーは1階層分のディレクトリ情報しか表すことができないのでSubDir以下に作成したfile3は別のツリーに紐付けられる。
+
+---
+## メモ
+### リモートブランチの作り方
+
+> $ git branch  
+$ git checkout -b dev main  
+$ git push -u origin dev
+
