@@ -57,6 +57,9 @@ $ git push -u origin dev
 * リモートブランチを含めて列挙
 > $ git branch -a
 
++ リモートブランチの削除
+> $ git push --delete origin <branch名>
+
 ---
 ### タグ
 * コメント(注釈)付きの場合
@@ -78,3 +81,6 @@ $ git tag -l "v1.*"
 * リモートブランチのtagを削除
 > $ git tag -d <tag名>  
 $ git push origin :<tag名>
+
+もしくは
+> $ git push --delete origin <tag名>
