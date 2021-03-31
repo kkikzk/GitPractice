@@ -49,7 +49,16 @@ file1とfile2を示すブロブに変化はなく、2回目のコミット後も
 $ git checkout -b dev main  
 $ git push -u origin dev
 
-### タグの追加方法
+---
+### ブランチ
+* ブランチの列挙
+> $ git branch
+
+* リモートブランチを含めて列挙
+> $ git branch -a
+
+---
+### タグ
 * コメント(注釈)付きの場合
 > $ git tag -a <tag名> -m "コメント"
 
@@ -65,3 +74,7 @@ $ git tag -l "v1.*"
 
 * 特定のtagを確認
 > $ git show <tag名>
+
+* リモートブランチのtagを削除
+> $ git tag -d <tag名>  
+$ git push origin :<tag名>
